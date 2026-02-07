@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agro by Forhad-Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-600 font-sans">
+
+    <div class="flex h-screen overflow-hidden">
+        
+        <div class="w-64 bg-green-800 text-white hidden md:block">
+            <div class="p-6 text-2xl font-bold border-b border-green-500">Digital Agro</div>
+            <nav class="mt-6">
+                <a href="#" class="block py-3 px-6 bg-green-700 border-l-4 border-white"><i class="fas fa-home mr-3"></i> Dashboard</a>
+                <a href="#" class="block py-3 px-6 hover:bg-green-700 transition"><i class="fas fa-seedling mr-3"></i> Crops Info</a>
+                <a href="#" class="block py-3 px-6 hover:bg-green-700 transition"><i class="fas fa-bug mr-3"></i> Disease Detection</a>
+                <a href="#" class="block py-3 px-6 hover:bg-green-700 transition"><i class="fas fa-calculator mr-3"></i> Fertilizer Calc</a>
+                <a href="#" class="block py-3 px-6 hover:bg-green-700 transition"><i class="fas fa-user-md mr-3"></i> Expert Support</a>
+            </nav>
+        </div>
+
+        <div class="flex-1 overflow-y-auto">
+            <header class="bg-white shadow-sm p-4 flex justify-between items-center">
+                <h2 class="text-xl font-semibold text-gray-900">Welcome back, Our User!</h2>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gray-500">Dhaka, Bangladesh | 28°C</span>
+                    <img src="https://via.placeholder.com/40" class="rounded-full border" alt="Profile">
+                </div>
+            </header>
+
+            <main class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-green-500">
+                        <h3 class="text-gray-500 text-sm uppercase">Soil Moisture</h3>
+                        <p class="text-3xl font-bold text-gray-800">45%</p>
+                        <span class="text-green-500 text-sm">Status: Healthy</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-blue-500">
+                        <h3 class="text-gray-500 text-sm uppercase">Next Rain</h3>
+                        <p class="text-3xl font-bold text-gray-800">In 2 Days</p>
+                        <span class="text-gray-500 text-sm">Probability: 60%</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-yellow-500">
+                        <h3 class="text-gray-500 text-sm uppercase">Market Price</h3>
+                        <p class="text-3xl font-bold text-gray-800">৳ 1200 / Mon</p>
+                        <span class="text-red-500 text-sm">Trend: Rising</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h3 class="text-lg font-bold mb-4 text-green-800">Disease Detection</h3>
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-10 text-center">
+                            <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-3"></i>
+                            <p class="text-gray-500">Upload leaf photo to identify diseases</p>
+                            <button class="mt-4 bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition">Upload Image</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h3 class="text-lg font-bold mb-4 text-green-800">Contact Agriculture Expert</h3>
+                        <form>
+                            <input type="text" placeholder="Subject" class="w-full mb-3 p-2 border rounded-lg focus:outline-green-500">
+                            <textarea placeholder="Describe your problem..." class="w-full mb-3 p-2 border rounded-lg h-24 focus:outline-green-500"></textarea>
+                            <button class="w-full bg-green-600 text-white py-2 rounded-lg font-bold hover:bg-green-700 transition">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
