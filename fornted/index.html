@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriSmart - Farmer Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon"><ion-icon name="leaf-outline"></ion-icon></span>
+                    <span class="title">Crops</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="water-outline"></ion-icon></span>
+                    <span class="title">Irrigation</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="partly-sunny-outline"></ion-icon></span>
+                    <span class="title">Weather</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="analytics-outline"></ion-icon></span>
+                    <span class="title">Soil Health</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <div class="leaf-icon">
+                <ion-icon name="leaf"></ion-icon>
+            </div>
+            <h2>AgriSmart Login</h2>
+            <form>
+                <div class="input-group">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" placeholder="Farmer ID / Email" required>
+                </div>
+                <div class="input-group">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-btn">Enter Dashboard</button>
+                <div class="extra-links">
+                    <a href="#">Forgot Password?</a>
+                    <a href="#">Register Farm</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="bg-leaf leaf1"><ion-icon name="leaf-outline"></ion-icon></div>
+    <div class="bg-leaf leaf2"><ion-icon name="leaf-outline"></ion-icon></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

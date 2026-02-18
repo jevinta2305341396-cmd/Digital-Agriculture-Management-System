@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #1b3022; /* Deep Forest Green */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* --- SIDEBAR NAVIGATION --- */
+.navigation {
+    position: fixed;
+    left: 20px;
+    width: 90px;
+    height: 550px;
+    background: #fdfaf1; /* Cream Background */
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.navigation:hover {
+    width: 250px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0 20px 10px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.navigation ul li.active {
+    background: #1b3022; 
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: #4a5d4e;
+}
+
+.navigation ul li.active a {
+    color: #a3c585; /* Leaf Green */
+}
+
+.navigation ul li a .icon {
+    min-width: 80px;
+    height: 70px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.navigation ul li a .icon ion-icon {
+    font-size: 1.75rem;
+}
+
+.navigation ul li a .title {
+    height: 70px;
+    line-height: 70px;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+/* --- MAGIC CURVE (SIDEBAR) --- */
+.navigation ul li.active a::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px #1b3022;
+}
+
+.navigation ul li.active a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px #1b3022;
+}
+
+/* --- LOGIN CONTAINER --- */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    background: #fdfaf1;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.leaf-icon {
+    font-size: 3rem;
+    color: #1b302
